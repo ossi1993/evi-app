@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block style %}
+<style>
+    html {
+        background-image: url(https://images.unsplash.com/photo-1529867567745-7118c3a36f51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1469&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    body {
+        height: 100%;
+        font-family: 'Merienda', cursive;
+        background: none;
+    }
+
+    .auth-box {
+        border: 3px solid lightgrey;
+        border-radius: 10px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 600px;
+        margin: auto;
+        background-color: whitesmoke;     
+        box-shadow: dimgray;
+    }
+
+    .login-form-container {
+        width: 300px;
+        margin: auto;
+    }
+
+    .registration-form-container {
+        width: 400px;
+        margin: auto;
+    }
+
+    .outer-area {
+        margin-top: 100px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="outer-area">
+    <div class="auth-box text-center">
+        {% block auth %}
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}
